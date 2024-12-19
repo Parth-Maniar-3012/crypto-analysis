@@ -1,0 +1,1286 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='gold_layer_daily_trends' inline='true' name='federated.1dcsv0f18nx6as1frwlyr1ly00o8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gold_layer_daily_trends' name='textscan.1cgqjxt0v2v3x810m9plu1h6uyvc'>
+            <connection class='textscan' directory='E:/Rowan DS/Fall-24/BIG DATA TOOLS &amp; TECHNIQUES/Project/AggregatedData' filename='gold_layer_daily_trends.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1cgqjxt0v2v3x810m9plu1h6uyvc' name='gold_layer_top_performers.csv' table='[gold_layer_top_performers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='string' name='month_year' ordinal='1' />
+            <column datatype='real' name='market_cap' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1cgqjxt0v2v3x810m9plu1h6uyvc' name='gold_layer_top_performers.csv' table='[gold_layer_top_performers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='string' name='month_year' ordinal='1' />
+            <column datatype='real' name='market_cap' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gold_layer_top_performers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[gold_layer_top_performers.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gold_layer_top_performers.csv_DBBDBECAAA3F47F08271702A0DB06E1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_year]</local-name>
+            <parent-name>[gold_layer_top_performers.csv]</parent-name>
+            <remote-alias>month_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gold_layer_top_performers.csv_DBBDBECAAA3F47F08271702A0DB06E1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_cap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_cap]</local-name>
+            <parent-name>[gold_layer_top_performers.csv]</parent-name>
+            <remote-alias>market_cap</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gold_layer_top_performers.csv_DBBDBECAAA3F47F08271702A0DB06E1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='gold_layer_top_performers.csv' datatype='table' name='[__tableau_internal_object_id__].[gold_layer_top_performers.csv_DBBDBECAAA3F47F08271702A0DB06E1A]' role='measure' type='quantitative' />
+      <column caption='Market Cap' datatype='real' name='[market_cap]' role='measure' type='quantitative' />
+      <column caption='Month Year' datatype='string' name='[month_year]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Volume' datatype='real' name='[volume]' role='measure' type='quantitative' />
+      <column-instance column='[month_year]' derivation='None' name='[none:month_year:nk]' pivot='key' type='nominal' />
+      <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[volume]' derivation='Sum' name='[sum:volume:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>8</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Ripple&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Binance-Coin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ethereum&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Solana&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LiteCoin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bitcoin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Monero&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;USD-Coin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;NEO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bitcoin-SV&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wrapped-Bitcoin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dogecoin&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:month_year:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;2011-03&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2012-11&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-07&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2016-03&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2017-11&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2019-07&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2021-03&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2022-11&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2024-07&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-07&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-11&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-07&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2017-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2018-11&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2020-07&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2022-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2023-11&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-11&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-07&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-03&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-11&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2017-07&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2019-03&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2020-11&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2022-07&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2024-03&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-07&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-03&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-11&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016-07&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2018-03&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2019-11&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2021-07&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2023-03&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2024-11&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-04&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2012-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-08&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2016-04&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2017-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2019-08&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2021-04&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2022-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2024-08&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-12&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-08&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-04&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-12&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2017-08&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2019-04&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2020-12&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2022-08&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2024-04&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2012-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-09&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-05&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2017-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2018-09&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2020-05&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2022-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2023-09&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-08&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-12&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-08&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2017-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2018-12&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2020-08&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2022-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2023-12&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-11&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-07&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-03&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2016-11&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2018-07&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2020-03&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2021-11&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2023-07&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-01&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2012-09&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-05&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016-01&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2017-09&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2019-05&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2021-01&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2022-09&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2024-05&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-12&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2016-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2018-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2019-12&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2021-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2023-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2024-12&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-09&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-05&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-01&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2016-09&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2018-05&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2020-01&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2021-09&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2023-05&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-12&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-08&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-04&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2016-12&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2018-08&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2020-04&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2021-12&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2023-08&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-10&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-06&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2017-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2018-10&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2020-06&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2022-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2023-10&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-05&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-01&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-09&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2016-05&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2018-01&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2019-09&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2021-05&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2023-01&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2024-09&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-02&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2012-10&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-06&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2016-02&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2017-10&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2019-06&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2021-02&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2022-10&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2024-06&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-09&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-05&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-01&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-09&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2017-05&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2019-01&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2020-09&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2022-05&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2024-01&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-10&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-06&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-02&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2016-10&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2018-06&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2020-02&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2021-10&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2023-06&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-06&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-02&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-10&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2016-06&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2018-02&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2019-10&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2021-06&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2023-02&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2024-10&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-10&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-06&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-02&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-10&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2017-06&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2019-02&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2020-10&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2022-06&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2024-02&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{db03fc78-aff7-48b1-9846-251bbf425f97}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:volume:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>3</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='gold_layer_top_performers.csv' id='gold_layer_top_performers.csv_DBBDBECAAA3F47F08271702A0DB06E1A'>
+            <properties context=''>
+              <relation connection='textscan.1cgqjxt0v2v3x810m9plu1h6uyvc' name='gold_layer_top_performers.csv' table='[gold_layer_top_performers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='string' name='month_year' ordinal='1' />
+                  <column datatype='real' name='market_cap' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_layer_daily_trends' name='federated.1dcsv0f18nx6as1frwlyr1ly00o8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcsv0f18nx6as1frwlyr1ly00o8'>
+            <column auto-hidden='true' caption='Clusters' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:1]' parent-model='[AnalyticModel:{db03fc78-aff7-48b1-9846-251bbf425f97}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[AdhocCluster:1]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[volume]' derivation='Sum' name='[sum:volume:qk]' pivot='key' type='quantitative' />
+            <column caption='Volume' datatype='real' name='[volume]' role='measure' type='quantitative' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+                  <map to='#4e79a7'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#59a14f'>
+                    <bucket>5</bucket>
+                  </map>
+                  <map to='#76b7b2'>
+                    <bucket>4</bucket>
+                  </map>
+                  <map to='#b07aa1'>
+                    <bucket>7</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#edc948'>
+                    <bucket>6</bucket>
+                  </map>
+                  <map to='#f28e2b'>
+                    <bucket>2</bucket>
+                  </map>
+                  <map to='#ff9da7'>
+                    <bucket>8</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:volume:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:volume:qk]' />
+              <text column='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk]' />
+              <color column='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:AdhocCluster:1:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{73954243-311A-4A89-8999-7FA73AF18364}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_layer_daily_trends' name='federated.1dcsv0f18nx6as1frwlyr1ly00o8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcsv0f18nx6as1frwlyr1ly00o8'>
+            <column caption='Market Cap' datatype='real' name='[market_cap]' role='measure' type='quantitative' />
+            <column caption='Month Year' datatype='string' name='[month_year]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[month_year]' derivation='None' name='[none:month_year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_cap]' derivation='Sum' name='[sum:market_cap:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:month_year:nk]'>
+            <groupfilter function='level-members' level='[none:month_year:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;Binance-Coin&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;Bitcoin-SV&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk]</column>
+            <column>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:month_year:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:market_cap:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:month_year:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:market_cap:qk]</rows>
+        <cols>([federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk] / [federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:month_year:nk])</cols>
+      </table>
+      <simple-id uuid='{48F6ED93-4C27-4422-A684-465DBDCB2513}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:AdhocCluster:1:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[:Measure Names]</field>
+            <field>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:AdhocCluster:1:ok]</field>
+            <field>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk]</field>
+            <field>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:volume:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{133A0F1A-46D2-4912-9110-066F66CFE3E8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:month_year:nk]' type='filter' />
+            <card param='[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[none:name:nk]</field>
+            <field>[federated.1dcsv0f18nx6as1frwlyr1ly00o8].[sum:market_cap:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{84615D57-9304-4F40-94DB-EF7710F3091C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      a7rBl3/5CgdPJ25Dak5lPgurC3l6W13C2jzPfbcs5l03vNH5egYCfPIHLzDgG3uyX1uRh65L
+      zrT3jXiNogjsqkJUM7j7+rkcqO+gsb1/3IOf3EwXf3vTIm5aMRO7bXIm0AcH6fnufxI+enRS
+      n08m4n4ofvOeMwnt/BAbbrV5xn/Sa6oQwKJZxUNe21PXNq7OD3C6rY+oPvo+QH6WmwfvX8ec
+      ynz+tOMEDRPo/AB9gyF+9Mwevvzoq3gGJh6pavgD9Hznu9Oi80OcDXB+lcYMDp3uHPc8YKoo
+      zkuntiJvyGsNHeNfsTEMSW1FPqoy8qLn+qVVbN5zhrrmHvQRhlTj4dDpTj7/yBbaJ3CjMMJh
+      er77PcLHj0+63WQjrgbYvPfMmLui8SIY1ghHE7sWfcPymZcsa+oT3I3Oy3Sxcl75sCZYOa+M
+      7v4AWw80XZbO87T1DMaeBONYlZO6Tu9Pf07o8OEpaTtZiNst0pCSLfsb4/X148LtiKU0CYTj
+      n+I8O93JnWtqgdih+xf3xMzvnEAckxBQ39ZHT7+fm66axa7jrWSmOSgvyOKaRRX4ghF+/uzU
+      Tjrbegb5wdO7+Nx9a1GH2ZOA2L7KwFNPE9ixY0rbTgbi9gRo6xnkTNvIk7lEEIxEWbOwIiFt
+      3XvjQrLSY/Hmv9tylJ8+u5ffbTnK1gNNOMY52SzJy2Dd0io83iCbdp+m3xfCMCT33bqYxbOK
+      eGLzkbgcq9l7op1th5tHfD904ADeZ/4Yh5bNJ24GOJTgie9wSAlFOWmsuCi7Wzy4em4Zt6+q
+      ufD/+tY3wpyjms7apTPG/A5VEdx9/Tz+sPXYkHTtrT2D/HrzYZ7ZVocvGL+Npt+8dGTYZAFa
+      jwfPT34GY0zOr1TiZoDTJt/9z9Pc5eWT965hRnF2XL5/VmkOn3jX6iFj/5uvnoX93P+vWzyD
+      D921gg3Lqxnp6KpNVfjbmxaxZHYx3cOszJxo9vDS3oa46D9Pu8fHwfqhJ9akrtP337/E6Dcx
+      9CLOxGUOIKWktTs5Tj21ewbJTHPyxfev59//Z9uUDstqyvP43HvXImXsidfQ3ke7x0evN0h+
+      dhqhSJSuPj8/+uMestNdLKsp4XRrH+GohiElTruNmvI87lk3jyWzigmEo2S4HfRGh05K/aHo
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
